@@ -1,0 +1,11 @@
+[build]
+  # Directory to publish after build
+  publish = "dist"
+  # Build command for your project
+  command = "npm run build"
+
+# Redirect all requests to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
